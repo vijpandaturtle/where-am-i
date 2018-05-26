@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /PoseArray1
       Splitter Ratio: 0.5
     Tree Height: 363
   - Class: rviz/Selection
@@ -156,7 +157,7 @@ Visualization Manager:
       Axes Length: 0.300000012
       Axes Radius: 0.00999999978
       Class: rviz/PoseArray
-      Color: 255; 25; 0
+      Color: 0; 255; 0
       Enabled: true
       Head Length: 0.0700000003
       Head Radius: 0.0299999993
@@ -205,10 +206,10 @@ Visualization Manager:
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 1.45979643
+      Pitch: 1.06979668
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.22039795
+      Yaw: 5.3003993
     Saved: ~
 Window Geometry:
   Camera:
@@ -228,5 +229,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: -8
-  Y: 53
+  X: -11
+  Y: -25
