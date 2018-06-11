@@ -12,7 +12,7 @@
   </joint>
 
   <link name='chassis'>
-
+	 
     <pose>0 0 0.1 0 0 0</pose>
 
     <inertial>
@@ -26,7 +26,7 @@
     </inertial>
 
     <collision name='collision'>
-      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/> 
       <geometry>
         <box size=".4 .2 .1"/>
       </geometry>
@@ -159,66 +159,34 @@
         <limit effort="10000" velocity="1000"/>
         <joint_properties damping="1.0" friction="1.0"/>
    </joint>
-
-   <link name="body">
-     <inertial>
-        <mass value="0.1"/>
-        <origin xyz="-0.05 0 0.1" rpy=" 0 0 0"/>
-        <inertia
-            ixx="1e-6" ixy="0" ixz="0"
-            iyy="1e-6" iyz="0" izz="1e-6"
-        />
-      </inertial>
-
-      <collision name='collision'>
-        <origin xyz="-0.05 0 0.1" rpy=" 0 0 0"/>
-        <geometry>
-          <box size="0.1 0.1 0.3"/>
-        </geometry>
-      </collision>
-
-      <visual name='chassis_visual'>
-        <origin xyz="-0.05 0 0.1" rpy=" 0 0 0"/>
-        <geometry>
-           <box size="0.15 0.15 0.3"/>
-        </geometry>
-      </visual>
-     </link>
-
-     <joint type="fixed" name="body_joint">
-          <origin xyz="-0.05 0 0" rpy="0 0 0"/>
-          <parent link="chassis"/>
-          <child link="body"/>
-          <axis xyz="0 1 0" rpy="0 0 0"/>
-     </joint>
-
+  
  <link name="camera">
    <inertial>
       <mass value="0.1"/>
-      <origin xyz="-0.05 0 0.14" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <inertia
-          ixx="1e-6" ixy="0" ixz="0"
+          ixx="1e-6" ixy="0" ixz="0" 
           iyy="1e-6" iyz="0" izz="1e-6"
       />
     </inertial>
 
     <collision name='collision'>
-      <origin xyz="-0.05 0 0.14" rpy=" 0 0 0"/>
-      <geometry>
-        <box size="0.06 0.06 0.06"/>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>         
+        <box size="0.05 0.05 0.05"/>
       </geometry>
     </collision>
 
     <visual name='chassis_visual'>
-      <origin xyz="-0.05 0 0.14" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-         <box size="0.06 0.06 0.06"/>
+         <box size="0.05 0.05 0.05"/>
       </geometry>
     </visual>
    </link>
 
    <joint type="fixed" name="camera_joint">
-        <origin xyz="-0.05 0 0.14" rpy="0 0 0"/>
+        <origin xyz="0.2 0 0" rpy="0 0 0"/>
         <parent link="chassis"/>
         <child link="camera"/>
         <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -229,14 +197,14 @@
       <mass value="0.1"/>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <inertia
-          ixx="1e-6" ixy="0" ixz="0"
+          ixx="1e-6" ixy="0" ixz="0" 
           iyy="1e-6" iyz="0" izz="1e-6"
       />
     </inertial>
 
     <collision name='collision'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
-      <geometry>
+      <geometry>         
         <box size="0.1 0.1 0.1"/>
       </geometry>
     </collision>
@@ -255,5 +223,5 @@
         <child link="hokuyo"/>
         <axis xyz="0 1 0" rpy="0 0 0"/>
    </joint>
-
+   
 </robot>
