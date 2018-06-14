@@ -1,12 +1,25 @@
-TrajectoryPlannerROS:
+controller_frequency: 10.0 #Control loop frequency: rate at which ctrl loop sends velocity commands to the base 
 
+TrajectoryPlannerROS: #Using trajectory planning API of the move_base package 
   max_vel_x: 0.45
   min_vel_x: 0.1 
   max_vel_theta: 1.0
   min_in_place_vel_theta: 0.4
+  escape_vel: -0.5
   
+  meter_scoring: true 
+  pdist_scale: 2.0 
+  gdist_scale: 0.5
+  occdist_scale: 0.01
+  heading_lookahead: 1
+
   acc_lim_theta: 3.2
   acc_lim_x: 2.5
   acc_lim_y: 2.5
+  
+  global_frame_id: odom
+  prune_plan: true 
+    
 
-  holonomic_robot: True 
+
+

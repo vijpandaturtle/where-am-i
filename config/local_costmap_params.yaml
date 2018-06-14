@@ -1,10 +1,14 @@
+#Similar changes can be found in the global costmap parameters 
 local_costmap:
    global_frame: odom
    robot_base_frame: robot_footprint
-   update_frequency:  5.0
+   update_frequency:  5.0 #Setting lower frequencies due to lack of compute power 
    publish_frequency: 5.0
-   width: 10.0
-   height: 10.0
+   #Setting the width and height of the costmap to a manageable value 
+   #to improve efficiency 
+   width: 5.0
+   height: 5.0
    resolution: 0.05
    static_map: false
    rolling_window: true
+
