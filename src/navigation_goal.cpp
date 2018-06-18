@@ -4,7 +4,7 @@
 
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
-int main(int argc, char** argv)
+int main(int argc, char** argv) 
 {
     ros::init(argc, argv, "navigation_goal");
     // Spin a thread
