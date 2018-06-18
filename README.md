@@ -1,6 +1,6 @@
 ## Localization Project
 
-This project aims to teach a robot to Localization itself, given a 2D map of an environment. More details about the project can be found in the report here.
+This project aims to teach a robot to Localization itself, given a 2D map of an environment. More details about the project can be found in the report [here.](https://github.com/vijpandaturtle/where-am-i/blob/master/localization.pdf)
 
 ### Instructions to run the project
 
