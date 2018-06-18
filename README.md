@@ -13,7 +13,8 @@ source devel/setup.bash
 
 roslaunch udacity_bot main.launch
 ```
-Open another terminal, and after building the source files and setup script, type
+Open another terminal, and after building the source files and setup script, type :
 ```
-rosrun udacity_bot navigation_goal 
+rosrun udacity_bot navigation_goal
 ```
+Sit back, relax and watch the robot moving towards the goal position.
