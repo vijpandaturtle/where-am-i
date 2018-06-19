@@ -1,8 +1,8 @@
-## Localization Project
+# Localization Project
 
 This project aims to teach a robot to Localization itself, given a 2D map of an environment. More details about the project can be found in the report [here.](https://github.com/vijpandaturtle/where-am-i/blob/master/localization.pdf)
 
-### Instructions to run the project
+## Instructions to run the project
 
 Organize the files in the repo into the following directory structure "catkin_ws/src/udacity_bot/.."
 
